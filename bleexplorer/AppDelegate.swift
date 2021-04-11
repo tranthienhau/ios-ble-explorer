@@ -10,10 +10,26 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
+    var navigationController: UINavigationController = UINavigationController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if #available(iOS 13.0, *) {
+            // In iOS 13 setup is done in SceneDelegate
+        } else {
+            // Override point for customization after application launch.
+            let viewChooseDevice = ViewChooseDevice(nibName: "ViewChooseDevice", bundle: nil)
+            navigationController = UINavigationController(rootViewController: viewChooseDevice)
+            navigationController.isNavigationBarHidden = true
+            
+            ChooseDiviceBuilder.buildModule(arroundView: viewChooseDevice)
+            
+            window = UIWindow(frame: UIScreen.main.bounds)
+            window?.rootViewController = navigationController
+            window?.makeKeyAndVisible()
+        }
+        
         return true
     }
 

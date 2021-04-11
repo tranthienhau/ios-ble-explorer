@@ -18,6 +18,31 @@
 		84F9E01D261D2CFF00D0F0EC /* bleexplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9E01C261D2CFF00D0F0EC /* bleexplorerTests.swift */; };
 		84F9E028261D2CFF00D0F0EC /* bleexplorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9E027261D2CFF00D0F0EC /* bleexplorerUITests.swift */; };
 		87E8F56855780F08D0603A16 /* Pods_bleexplorer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DB039D3E0A723957105CDA /* Pods_bleexplorer.framework */; };
+		AA136A4E2621637200DCAB47 /* ViewChooseDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA136A4C2621637200DCAB47 /* ViewChooseDevice.swift */; };
+		AA136A4F2621637200DCAB47 /* ViewChooseDevice.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA136A4D2621637200DCAB47 /* ViewChooseDevice.xib */; };
+		AA136A57262163F500DCAB47 /* PresenterChooseDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA136A56262163F500DCAB47 /* PresenterChooseDevice.swift */; };
+		AA136A5C2621640D00DCAB47 /* InteractorChooseDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA136A5B2621640D00DCAB47 /* InteractorChooseDevice.swift */; };
+		AA136A612621641B00DCAB47 /* RouterChooseDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA136A602621641B00DCAB47 /* RouterChooseDevice.swift */; };
+		AA136A662621644200DCAB47 /* EntityChooseDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA136A652621644200DCAB47 /* EntityChooseDevice.swift */; };
+		AA136A6B2621650000DCAB47 /* BuilderChooseDeviceScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA136A6A2621650000DCAB47 /* BuilderChooseDeviceScreen.swift */; };
+		AA136A722622AC3E00DCAB47 /* ViewSelectBluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA136A702622AC3E00DCAB47 /* ViewSelectBluetooth.swift */; };
+		AA136A732622AC3E00DCAB47 /* ViewSelectBluetooth.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA136A712622AC3E00DCAB47 /* ViewSelectBluetooth.xib */; };
+		AA136A7B2622AC5A00DCAB47 /* PresenterSelectBluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA136A7A2622AC5A00DCAB47 /* PresenterSelectBluetooth.swift */; };
+		AA136A802622AC6C00DCAB47 /* InteractorSelectBluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA136A7F2622AC6C00DCAB47 /* InteractorSelectBluetooth.swift */; };
+		AA136A852622AC8700DCAB47 /* RouterSelectBluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA136A842622AC8700DCAB47 /* RouterSelectBluetooth.swift */; };
+		AA136A8A2622ACA800DCAB47 /* EntitySelectBluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA136A892622ACA800DCAB47 /* EntitySelectBluetooth.swift */; };
+		AA136A8F2622ACD100DCAB47 /* BuilderSelectBluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA136A8E2622ACD100DCAB47 /* BuilderSelectBluetooth.swift */; };
+		AA136A962622AFDC00DCAB47 /* CustomViewTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA136A952622AFDC00DCAB47 /* CustomViewTitle.swift */; };
+		AA136A9E2622AFE800DCAB47 /* CustomViewTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA136A9D2622AFE800DCAB47 /* CustomViewTitle.xib */; };
+		AA136ACA2622BACF00DCAB47 /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA136AC92622BACE00DCAB47 /* ExtensionUIView.swift */; };
+		AA5956A82623468300A38D3E /* TableCellBluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5956A62623468300A38D3E /* TableCellBluetooth.swift */; };
+		AA5956A92623468300A38D3E /* TableCellBluetooth.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5956A72623468300A38D3E /* TableCellBluetooth.xib */; };
+		AA5956B126234FCD00A38D3E /* ViewLogWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5956AF26234FCD00A38D3E /* ViewLogWeight.swift */; };
+		AA5956B226234FCD00A38D3E /* ViewLogWeight.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5956B026234FCD00A38D3E /* ViewLogWeight.xib */; };
+		AA5956BA26234FE100A38D3E /* PresenterLogWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5956B926234FE100A38D3E /* PresenterLogWeight.swift */; };
+		AA5956BF26234FF400A38D3E /* InteractorLogWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5956BE26234FF400A38D3E /* InteractorLogWeight.swift */; };
+		AA5956C42623500300A38D3E /* RouterLogWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5956C32623500300A38D3E /* RouterLogWeight.swift */; };
+		AA5956C92623503700A38D3E /* EntityLogWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5956C82623503700A38D3E /* EntityLogWeight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +83,31 @@
 		84F9E027261D2CFF00D0F0EC /* bleexplorerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bleexplorerUITests.swift; sourceTree = "<group>"; };
 		84F9E029261D2CFF00D0F0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97DB039D3E0A723957105CDA /* Pods_bleexplorer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bleexplorer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA136A4C2621637200DCAB47 /* ViewChooseDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewChooseDevice.swift; sourceTree = "<group>"; };
+		AA136A4D2621637200DCAB47 /* ViewChooseDevice.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewChooseDevice.xib; sourceTree = "<group>"; };
+		AA136A56262163F500DCAB47 /* PresenterChooseDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterChooseDevice.swift; sourceTree = "<group>"; };
+		AA136A5B2621640D00DCAB47 /* InteractorChooseDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorChooseDevice.swift; sourceTree = "<group>"; };
+		AA136A602621641B00DCAB47 /* RouterChooseDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterChooseDevice.swift; sourceTree = "<group>"; };
+		AA136A652621644200DCAB47 /* EntityChooseDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityChooseDevice.swift; sourceTree = "<group>"; };
+		AA136A6A2621650000DCAB47 /* BuilderChooseDeviceScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderChooseDeviceScreen.swift; sourceTree = "<group>"; };
+		AA136A702622AC3E00DCAB47 /* ViewSelectBluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSelectBluetooth.swift; sourceTree = "<group>"; };
+		AA136A712622AC3E00DCAB47 /* ViewSelectBluetooth.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewSelectBluetooth.xib; sourceTree = "<group>"; };
+		AA136A7A2622AC5A00DCAB47 /* PresenterSelectBluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterSelectBluetooth.swift; sourceTree = "<group>"; };
+		AA136A7F2622AC6C00DCAB47 /* InteractorSelectBluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorSelectBluetooth.swift; sourceTree = "<group>"; };
+		AA136A842622AC8700DCAB47 /* RouterSelectBluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterSelectBluetooth.swift; sourceTree = "<group>"; };
+		AA136A892622ACA800DCAB47 /* EntitySelectBluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitySelectBluetooth.swift; sourceTree = "<group>"; };
+		AA136A8E2622ACD100DCAB47 /* BuilderSelectBluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderSelectBluetooth.swift; sourceTree = "<group>"; };
+		AA136A952622AFDC00DCAB47 /* CustomViewTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewTitle.swift; sourceTree = "<group>"; };
+		AA136A9D2622AFE800DCAB47 /* CustomViewTitle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewTitle.xib; sourceTree = "<group>"; };
+		AA136AC92622BACE00DCAB47 /* ExtensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
+		AA5956A62623468300A38D3E /* TableCellBluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellBluetooth.swift; sourceTree = "<group>"; };
+		AA5956A72623468300A38D3E /* TableCellBluetooth.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCellBluetooth.xib; sourceTree = "<group>"; };
+		AA5956AF26234FCD00A38D3E /* ViewLogWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLogWeight.swift; sourceTree = "<group>"; };
+		AA5956B026234FCD00A38D3E /* ViewLogWeight.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewLogWeight.xib; sourceTree = "<group>"; };
+		AA5956B926234FE100A38D3E /* PresenterLogWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterLogWeight.swift; sourceTree = "<group>"; };
+		AA5956BE26234FF400A38D3E /* InteractorLogWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorLogWeight.swift; sourceTree = "<group>"; };
+		AA5956C32623500300A38D3E /* RouterLogWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterLogWeight.swift; sourceTree = "<group>"; };
+		AA5956C82623503700A38D3E /* EntityLogWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityLogWeight.swift; sourceTree = "<group>"; };
 		DA01E9EA73A0B825ACEDC966 /* Pods-bleexplorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bleexplorer.debug.xcconfig"; path = "Target Support Files/Pods-bleexplorer/Pods-bleexplorer.debug.xcconfig"; sourceTree = "<group>"; };
 		F054AE498DA5C6977DF80B7B /* Pods-bleexplorerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bleexplorerTests.release.xcconfig"; path = "Target Support Files/Pods-bleexplorerTests/Pods-bleexplorerTests.release.xcconfig"; sourceTree = "<group>"; };
 		F44DA15B63E4C3F7E3AD684F /* Pods-bleexplorer-bleexplorerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bleexplorer-bleexplorerUITests.debug.xcconfig"; path = "Target Support Files/Pods-bleexplorer-bleexplorerUITests/Pods-bleexplorer-bleexplorerUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +179,10 @@
 		84F9E004261D2CFD00D0F0EC /* bleexplorer */ = {
 			isa = PBXGroup;
 			children = (
+				AA5956AE26234F9600A38D3E /* Screen */,
+				AA5956A42623463F00A38D3E /* TableCell */,
+				AA136AC72622BAA300DCAB47 /* Extension */,
+				AA136A932622AFA200DCAB47 /* Custom */,
 				84F9E005261D2CFD00D0F0EC /* AppDelegate.swift */,
 				84F9E007261D2CFD00D0F0EC /* SceneDelegate.swift */,
 				84F9E009261D2CFD00D0F0EC /* ViewController.swift */,
@@ -166,6 +220,99 @@
 				8325EDACEBC9FA2128EAA2C3 /* Pods_bleexplorerTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA136A6F2622ABC200DCAB47 /* SelectBluetoothScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AA136A702622AC3E00DCAB47 /* ViewSelectBluetooth.swift */,
+				AA136A712622AC3E00DCAB47 /* ViewSelectBluetooth.xib */,
+				AA136A7A2622AC5A00DCAB47 /* PresenterSelectBluetooth.swift */,
+				AA136A7F2622AC6C00DCAB47 /* InteractorSelectBluetooth.swift */,
+				AA136A842622AC8700DCAB47 /* RouterSelectBluetooth.swift */,
+				AA136A892622ACA800DCAB47 /* EntitySelectBluetooth.swift */,
+				AA136A8E2622ACD100DCAB47 /* BuilderSelectBluetooth.swift */,
+			);
+			path = SelectBluetoothScreen;
+			sourceTree = "<group>";
+		};
+		AA136A932622AFA200DCAB47 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				AA136A942622AFBB00DCAB47 /* CustomViewTitle */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		AA136A942622AFBB00DCAB47 /* CustomViewTitle */ = {
+			isa = PBXGroup;
+			children = (
+				AA136A952622AFDC00DCAB47 /* CustomViewTitle.swift */,
+				AA136A9D2622AFE800DCAB47 /* CustomViewTitle.xib */,
+			);
+			path = CustomViewTitle;
+			sourceTree = "<group>";
+		};
+		AA136AC72622BAA300DCAB47 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AA136AC92622BACE00DCAB47 /* ExtensionUIView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AA5956A42623463F00A38D3E /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				AA5956A52623465800A38D3E /* TableCellBluetooth */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		AA5956A52623465800A38D3E /* TableCellBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				AA5956A62623468300A38D3E /* TableCellBluetooth.swift */,
+				AA5956A72623468300A38D3E /* TableCellBluetooth.xib */,
+			);
+			path = TableCellBluetooth;
+			sourceTree = "<group>";
+		};
+		AA5956AD26234F7B00A38D3E /* LogWeightScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AA5956AF26234FCD00A38D3E /* ViewLogWeight.swift */,
+				AA5956B026234FCD00A38D3E /* ViewLogWeight.xib */,
+				AA5956B926234FE100A38D3E /* PresenterLogWeight.swift */,
+				AA5956BE26234FF400A38D3E /* InteractorLogWeight.swift */,
+				AA5956C32623500300A38D3E /* RouterLogWeight.swift */,
+				AA5956C82623503700A38D3E /* EntityLogWeight.swift */,
+			);
+			path = LogWeightScreen;
+			sourceTree = "<group>";
+		};
+		AA5956AE26234F9600A38D3E /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				AA136A6F2622ABC200DCAB47 /* SelectBluetoothScreen */,
+				AA7A62EB261DF9EE003B7655 /* ChooseDevicesScreen */,
+				AA5956AD26234F7B00A38D3E /* LogWeightScreen */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		AA7A62EB261DF9EE003B7655 /* ChooseDevicesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AA136A4C2621637200DCAB47 /* ViewChooseDevice.swift */,
+				AA136A4D2621637200DCAB47 /* ViewChooseDevice.xib */,
+				AA136A56262163F500DCAB47 /* PresenterChooseDevice.swift */,
+				AA136A5B2621640D00DCAB47 /* InteractorChooseDevice.swift */,
+				AA136A602621641B00DCAB47 /* RouterChooseDevice.swift */,
+				AA136A652621644200DCAB47 /* EntityChooseDevice.swift */,
+				AA136A6A2621650000DCAB47 /* BuilderChooseDeviceScreen.swift */,
+			);
+			path = ChooseDevicesScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,9 +421,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA136A9E2622AFE800DCAB47 /* CustomViewTitle.xib in Resources */,
+				AA5956A92623468300A38D3E /* TableCellBluetooth.xib in Resources */,
+				AA136A4F2621637200DCAB47 /* ViewChooseDevice.xib in Resources */,
 				84F9E012261D2CFF00D0F0EC /* LaunchScreen.storyboard in Resources */,
+				AA136A732622AC3E00DCAB47 /* ViewSelectBluetooth.xib in Resources */,
 				84F9E00F261D2CFF00D0F0EC /* Assets.xcassets in Resources */,
 				84F9E00D261D2CFD00D0F0EC /* Main.storyboard in Resources */,
+				AA5956B226234FCD00A38D3E /* ViewLogWeight.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,9 +522,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA5956BF26234FF400A38D3E /* InteractorLogWeight.swift in Sources */,
+				AA5956C42623500300A38D3E /* RouterLogWeight.swift in Sources */,
+				AA136A7B2622AC5A00DCAB47 /* PresenterSelectBluetooth.swift in Sources */,
+				AA136A4E2621637200DCAB47 /* ViewChooseDevice.swift in Sources */,
+				AA136A662621644200DCAB47 /* EntityChooseDevice.swift in Sources */,
+				AA136A802622AC6C00DCAB47 /* InteractorSelectBluetooth.swift in Sources */,
+				AA136A6B2621650000DCAB47 /* BuilderChooseDeviceScreen.swift in Sources */,
+				AA136A612621641B00DCAB47 /* RouterChooseDevice.swift in Sources */,
+				AA136ACA2622BACF00DCAB47 /* ExtensionUIView.swift in Sources */,
+				AA136A5C2621640D00DCAB47 /* InteractorChooseDevice.swift in Sources */,
 				84F9E00A261D2CFD00D0F0EC /* ViewController.swift in Sources */,
+				AA5956B126234FCD00A38D3E /* ViewLogWeight.swift in Sources */,
+				AA136A962622AFDC00DCAB47 /* CustomViewTitle.swift in Sources */,
+				AA5956C92623503700A38D3E /* EntityLogWeight.swift in Sources */,
 				84F9E006261D2CFD00D0F0EC /* AppDelegate.swift in Sources */,
+				AA136A8F2622ACD100DCAB47 /* BuilderSelectBluetooth.swift in Sources */,
+				AA5956BA26234FE100A38D3E /* PresenterLogWeight.swift in Sources */,
 				84F9E008261D2CFD00D0F0EC /* SceneDelegate.swift in Sources */,
+				AA5956A82623468300A38D3E /* TableCellBluetooth.swift in Sources */,
+				AA136A57262163F500DCAB47 /* PresenterChooseDevice.swift in Sources */,
+				AA136A722622AC3E00DCAB47 /* ViewSelectBluetooth.swift in Sources */,
+				AA136A852622AC8700DCAB47 /* RouterSelectBluetooth.swift in Sources */,
+				AA136A8A2622ACA800DCAB47 /* EntitySelectBluetooth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

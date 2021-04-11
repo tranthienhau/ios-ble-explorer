@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewChooseDevice" customModule="bleexplorer" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6F-Ge-4MZ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uw7-v5-ZQg">
+                            <rect key="frame" x="49.5" y="227" width="315" height="150"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3I-vl-ZnO">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="150" id="6tV-DO-sRN"/>
+                                    </constraints>
+                                    <state key="normal" image="btnSmartScale"/>
+                                    <connections>
+                                        <action selector="btnSmartScale_Action:" destination="-1" eventType="touchUpInside" id="73w-sJ-hZX"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNc-iz-GqS">
+                                    <rect key="frame" x="165" y="0.0" width="150" height="150"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="150" id="lbL-Zx-GnJ"/>
+                                    </constraints>
+                                    <state key="normal" image="btnSmartWatch"/>
+                                    <connections>
+                                        <action selector="btnSmartWatch_Action:" destination="-1" eventType="touchUpInside" id="6Fv-mx-cmS"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="RNc-iz-GqS" firstAttribute="top" secondItem="Uw7-v5-ZQg" secondAttribute="top" id="1G2-UE-1uU"/>
+                                <constraint firstAttribute="bottom" secondItem="b3I-vl-ZnO" secondAttribute="bottom" id="3cl-xx-xYY"/>
+                                <constraint firstAttribute="bottom" secondItem="RNc-iz-GqS" secondAttribute="bottom" id="O9s-e5-nZF"/>
+                                <constraint firstAttribute="width" constant="315" id="ZiR-VU-B5Y"/>
+                                <constraint firstAttribute="trailing" secondItem="RNc-iz-GqS" secondAttribute="trailing" id="Zxu-VU-MTG"/>
+                                <constraint firstAttribute="height" constant="150" id="qJX-rA-n7Z"/>
+                                <constraint firstItem="b3I-vl-ZnO" firstAttribute="leading" secondItem="Uw7-v5-ZQg" secondAttribute="leading" id="riX-a7-Nbo"/>
+                                <constraint firstItem="b3I-vl-ZnO" firstAttribute="top" secondItem="Uw7-v5-ZQg" secondAttribute="top" id="tht-OB-QiL"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dMz-eS-gGd" customClass="CustomViewTitle" customModule="bleexplorer" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="82"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="82" id="7D8-xK-KGa"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="showButtonBack" value="NO"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="stringTitle" value="devices"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="stringDescription" value="Choose your Connected Devices"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="dMz-eS-gGd" secondAttribute="trailing" id="0dz-oh-KIZ"/>
+                        <constraint firstItem="Uw7-v5-ZQg" firstAttribute="top" secondItem="dMz-eS-gGd" secondAttribute="bottom" constant="145" id="0g5-af-aZ4"/>
+                        <constraint firstItem="Uw7-v5-ZQg" firstAttribute="centerX" secondItem="h6F-Ge-4MZ" secondAttribute="centerX" id="4Gz-KM-Afe"/>
+                        <constraint firstItem="dMz-eS-gGd" firstAttribute="leading" secondItem="h6F-Ge-4MZ" secondAttribute="leading" id="Bo6-NO-2bv"/>
+                        <constraint firstItem="dMz-eS-gGd" firstAttribute="top" secondItem="h6F-Ge-4MZ" secondAttribute="top" id="h5E-yX-ofB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.0039215686269999999" green="0.72549019609999998" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="h6F-Ge-4MZ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="5In-5J-9sO"/>
+                <constraint firstItem="h6F-Ge-4MZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="mJG-ml-bsZ"/>
+                <constraint firstItem="h6F-Ge-4MZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="otE-i8-bzP"/>
+                <constraint firstItem="h6F-Ge-4MZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="srH-Sp-dTc"/>
+            </constraints>
+            <point key="canvasLocation" x="53.623188405797109" y="81.696428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btnSmartScale" width="150" height="150"/>
+        <image name="btnSmartWatch" width="150" height="150"/>
+    </resources>
+</document>
