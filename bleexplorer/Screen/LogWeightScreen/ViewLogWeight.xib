@@ -11,7 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewLogWeight" customModule="bleexplorer" customModuleProvider="target">
             <connections>
+                <outlet property="lbToday" destination="pa6-ex-z4t" id="jxi-sE-CCp"/>
+                <outlet property="tfWeight" destination="bVz-Ll-J8N" id="Htg-c1-dd2"/>
                 <outlet property="vContain" destination="mfw-Bd-f8j" id="I9p-vN-CFJ"/>
+                <outlet property="vLineUnderWeight" destination="3Zt-Ib-8KO" id="XOz-gV-JU8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -39,7 +42,7 @@
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="254-mx-zdv">
                                     <rect key="frame" x="0.0" y="54" width="354" height="1"/>
-                                    <color key="backgroundColor" red="0.0039215686274509803" green="0.0039215686274509803" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.047058823530000002" green="0.0039215686269999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="tMQ-ol-kBc"/>
                                     </constraints>
@@ -63,6 +66,9 @@
                                         <constraint firstAttribute="height" constant="40" id="odq-WB-apJ"/>
                                     </constraints>
                                     <state key="normal" image="btnCalendar"/>
+                                    <connections>
+                                        <action selector="btnOpenTimePicker_Action:" destination="-1" eventType="touchUpInside" id="aWq-nz-kMT"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -98,7 +104,10 @@
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bVz-Ll-J8N">
                                     <rect key="frame" x="10" y="26.5" width="295" height="18.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                    <connections>
+                                        <action selector="tfWeight_change:" destination="-1" eventType="valueChanged" id="Gkp-i4-MCH"/>
+                                    </connections>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pi-7s-L46">
                                     <rect key="frame" x="325" y="27.5" width="19" height="17"/>
@@ -128,6 +137,9 @@
                                 <constraint firstAttribute="height" constant="50" id="9X3-KC-5vA"/>
                             </constraints>
                             <state key="normal" image="btnSave"/>
+                            <connections>
+                                <action selector="btnSave_Action:" destination="-1" eventType="touchUpInside" id="Nsp-Dm-3qg"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>

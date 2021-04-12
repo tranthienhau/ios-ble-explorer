@@ -19,11 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // In iOS 13 setup is done in SceneDelegate
         } else {
             // Override point for customization after application launch.
-            let viewChooseDevice = ViewChooseDevice(nibName: "ViewChooseDevice", bundle: nil)
-            navigationController = UINavigationController(rootViewController: viewChooseDevice)
-            navigationController.isNavigationBarHidden = true
+//            let viewChooseDevice = ViewChooseDevice(nibName: "ViewChooseDevice", bundle: nil)
+//            navigationController = UINavigationController(rootViewController: viewChooseDevice)
+//            navigationController.isNavigationBarHidden = true
+//            ChooseDiviceBuilder.buildModule(arroundView: viewChooseDevice)
             
-            ChooseDiviceBuilder.buildModule(arroundView: viewChooseDevice)
+            let viewLogWeight = ViewLogWeight(nibName: "ViewLogWeight", bundle: nil)
+            navigationController = UINavigationController(rootViewController: viewLogWeight)
+            navigationController.isNavigationBarHidden = true
+            LogWeightBuilder.buildModule(arroundView: viewLogWeight)
             
             window = UIWindow(frame: UIScreen.main.bounds)
             window?.rootViewController = navigationController

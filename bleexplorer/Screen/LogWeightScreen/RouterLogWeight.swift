@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+protocol RouterLogWeightProtocol {
+    
+}
+
+class RouterLogWeight: RouterLogWeightProtocol {
+}

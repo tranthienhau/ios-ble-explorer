@@ -43,6 +43,8 @@
 		AA5956BF26234FF400A38D3E /* InteractorLogWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5956BE26234FF400A38D3E /* InteractorLogWeight.swift */; };
 		AA5956C42623500300A38D3E /* RouterLogWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5956C32623500300A38D3E /* RouterLogWeight.swift */; };
 		AA5956C92623503700A38D3E /* EntityLogWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5956C82623503700A38D3E /* EntityLogWeight.swift */; };
+		AAE0C1882624889200152EA4 /* ExtensionUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE0C1872624889200152EA4 /* ExtensionUIViewController.swift */; };
+		AAE0C19026249A0B00152EA4 /* BuilderLogWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE0C18F26249A0B00152EA4 /* BuilderLogWeight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,8 @@
 		AA5956BE26234FF400A38D3E /* InteractorLogWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorLogWeight.swift; sourceTree = "<group>"; };
 		AA5956C32623500300A38D3E /* RouterLogWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterLogWeight.swift; sourceTree = "<group>"; };
 		AA5956C82623503700A38D3E /* EntityLogWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityLogWeight.swift; sourceTree = "<group>"; };
+		AAE0C1872624889200152EA4 /* ExtensionUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIViewController.swift; sourceTree = "<group>"; };
+		AAE0C18F26249A0B00152EA4 /* BuilderLogWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderLogWeight.swift; sourceTree = "<group>"; };
 		DA01E9EA73A0B825ACEDC966 /* Pods-bleexplorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bleexplorer.debug.xcconfig"; path = "Target Support Files/Pods-bleexplorer/Pods-bleexplorer.debug.xcconfig"; sourceTree = "<group>"; };
 		F054AE498DA5C6977DF80B7B /* Pods-bleexplorerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bleexplorerTests.release.xcconfig"; path = "Target Support Files/Pods-bleexplorerTests/Pods-bleexplorerTests.release.xcconfig"; sourceTree = "<group>"; };
 		F44DA15B63E4C3F7E3AD684F /* Pods-bleexplorer-bleexplorerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bleexplorer-bleexplorerUITests.debug.xcconfig"; path = "Target Support Files/Pods-bleexplorer-bleexplorerUITests/Pods-bleexplorer-bleexplorerUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -257,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				AA136AC92622BACE00DCAB47 /* ExtensionUIView.swift */,
+				AAE0C1872624889200152EA4 /* ExtensionUIViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -287,6 +292,7 @@
 				AA5956BE26234FF400A38D3E /* InteractorLogWeight.swift */,
 				AA5956C32623500300A38D3E /* RouterLogWeight.swift */,
 				AA5956C82623503700A38D3E /* EntityLogWeight.swift */,
+				AAE0C18F26249A0B00152EA4 /* BuilderLogWeight.swift */,
 			);
 			path = LogWeightScreen;
 			sourceTree = "<group>";
@@ -534,6 +540,7 @@
 				AA136A5C2621640D00DCAB47 /* InteractorChooseDevice.swift in Sources */,
 				84F9E00A261D2CFD00D0F0EC /* ViewController.swift in Sources */,
 				AA5956B126234FCD00A38D3E /* ViewLogWeight.swift in Sources */,
+				AAE0C1882624889200152EA4 /* ExtensionUIViewController.swift in Sources */,
 				AA136A962622AFDC00DCAB47 /* CustomViewTitle.swift in Sources */,
 				AA5956C92623503700A38D3E /* EntityLogWeight.swift in Sources */,
 				84F9E006261D2CFD00D0F0EC /* AppDelegate.swift in Sources */,
@@ -542,6 +549,7 @@
 				84F9E008261D2CFD00D0F0EC /* SceneDelegate.swift in Sources */,
 				AA5956A82623468300A38D3E /* TableCellBluetooth.swift in Sources */,
 				AA136A57262163F500DCAB47 /* PresenterChooseDevice.swift in Sources */,
+				AAE0C19026249A0B00152EA4 /* BuilderLogWeight.swift in Sources */,
 				AA136A722622AC3E00DCAB47 /* ViewSelectBluetooth.swift in Sources */,
 				AA136A852622AC8700DCAB47 /* RouterSelectBluetooth.swift in Sources */,
 				AA136A8A2622ACA800DCAB47 /* EntitySelectBluetooth.swift in Sources */,

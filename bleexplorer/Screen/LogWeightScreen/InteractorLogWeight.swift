@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+protocol InteractorLogWeightProtocol {
+    func handleSaveData()
+}
+
+class InteractorLogWeight: InteractorLogWeightProtocol {
+    
+    weak var presenter: PresenterLogWeightProtocolForInteractor?
+    
+    //MARK: - Implement Protocol
+    func handleSaveData() {
+        guard let injectPresenter = presenter else {
+            return
+        }
+        injectPresenter.handleFinishSaveData(isError: false)
+    }
+}
