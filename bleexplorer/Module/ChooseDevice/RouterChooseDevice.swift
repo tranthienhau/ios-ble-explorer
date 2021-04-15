@@ -15,8 +15,7 @@ class RouterChooseDevice: RouterChooseDeviceProtocol {
     func pushToDetail(from view: ViewChooseDeviceProtocol) {
         let view = view as! ViewChooseDevice
         
-        let viewSelectBlutooth = ViewSelectBluetooth(nibName: "ViewSelectBluetooth", bundle: nil)
-        SelectBluetoothBuilder.buildModule(arroundView: viewSelectBlutooth)
+        let viewSelectBlutooth = SelectBluetoothBuilder.buildModule()
         view.navigationController?.pushViewController(viewSelectBlutooth, animated: true)
         
     }

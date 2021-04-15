@@ -6,18 +6,18 @@
 //
 
 protocol InteractorSelectBluetoothProtocol {
-    func handleGetDataBluetooth()
+    func handleGetDataBluetooth(result: (Int)->(), error: (Bool)->())
 }
 
 class InteractorSelectBluetooth: InteractorSelectBluetoothProtocol {
-    
+
     weak var presenter: PresenterSelectBluetoothProtocol?
     
     //MARK: - Implement Protocol
-    func handleGetDataBluetooth() {
+    func handleGetDataBluetooth(result: (Int)->(), error: (Bool)->()) {
         let randomNumber = Int.random(in: 1..<10)
         
-        guard let injectPresenter = presenter else {return}
-        injectPresenter.returnDataBluetooth(numberItem: randomNumber)
+        result(randomNumber)
+        error(false)
     }
 }

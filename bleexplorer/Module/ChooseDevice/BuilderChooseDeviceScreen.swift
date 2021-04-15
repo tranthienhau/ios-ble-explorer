@@ -5,11 +5,13 @@
 //  Created by DatNguyen on 4/10/21.
 //
 
-import Foundation
+import UIKit
 
 class ChooseDiviceBuilder {
 
-    class func buildModule(arroundView view:ViewChooseDevice) {
+    class func buildModule() -> UIViewController  {
+        
+        let view = ViewChooseDevice(nibName: "ViewChooseDevice", bundle: nil)
         
         //MARK: Initialise components.
         let presenter = PresenterChooseDevice()
@@ -25,5 +27,7 @@ class ChooseDiviceBuilder {
         presenter.interactor = interactor
         // Setup Interactor
         interactor.presenter = presenter
+        
+        return view
     }
 }

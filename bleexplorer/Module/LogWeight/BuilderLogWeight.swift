@@ -5,10 +5,12 @@
 //  Created by DatNguyen on 4/12/21.
 //
 
-import Foundation
+import UIKit
 
 class LogWeightBuilder {
-    class func buildModule(arroundView view:ViewLogWeight) {
+    class func buildModule() -> UIViewController {
+        
+        let view = ViewLogWeight(nibName: "ViewLogWeight", bundle: nil)
         
         //MARK: Initialise components.
         let presenter = PresenterLogWeight()
@@ -24,5 +26,7 @@ class LogWeightBuilder {
         presenter.interactor = interactor
         // Setup Interactor
         interactor.presenter = presenter
+        
+        return view
     }
 }

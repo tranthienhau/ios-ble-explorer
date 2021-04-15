@@ -17,15 +17,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScene)
         
-//        let viewChooseDevice = ViewChooseDevice(nibName: "ViewChooseDevice", bundle: nil)
-//        navigationController = UINavigationController(rootViewController: viewChooseDevice)
-//        navigationController.isNavigationBarHidden = true
-//        ChooseDiviceBuilder.buildModule(arroundView: viewChooseDevice)
-        
-        let viewLogWeight = ViewLogWeight(nibName: "ViewLogWeight", bundle: nil)
-        navigationController = UINavigationController(rootViewController: viewLogWeight)
+        let viewChooseDevice = ChooseDiviceBuilder.buildModule()
+        navigationController = UINavigationController(rootViewController: viewChooseDevice)
         navigationController.isNavigationBarHidden = true
-        LogWeightBuilder.buildModule(arroundView: viewLogWeight)
         
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()

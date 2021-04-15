@@ -69,14 +69,65 @@
                                 <userDefinedRuntimeAttribute type="string" keyPath="stringDescription" value="Choose your Connected Devices"/>
                             </userDefinedRuntimeAttributes>
                         </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="R2e-aa-V4K">
+                            <rect key="frame" x="50" y="427" width="314" height="67.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOV-WD-Vi6">
+                                    <rect key="frame" x="0.0" y="0.0" width="67.5" height="67.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="XOV-WD-Vi6" secondAttribute="height" multiplier="1:1" id="89V-mk-sJq"/>
+                                    </constraints>
+                                    <state key="normal" image="btnSmartScale"/>
+                                    <connections>
+                                        <action selector="btnSmartScale_Action:" destination="-1" eventType="touchUpInside" id="hKY-9R-Cd4"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4V-Dt-Kel">
+                                    <rect key="frame" x="82.5" y="0.0" width="67" height="67.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="v4V-Dt-Kel" secondAttribute="height" multiplier="1:1" id="VCH-e2-8AN"/>
+                                    </constraints>
+                                    <state key="normal" image="btnSmartWatch"/>
+                                    <connections>
+                                        <action selector="btnSmartWatch_Action:" destination="-1" eventType="touchUpInside" id="Dl4-8Q-VHK"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8V-5j-cRc">
+                                    <rect key="frame" x="164.5" y="0.0" width="67.5" height="67.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="K8V-5j-cRc" secondAttribute="height" multiplier="1:1" id="66B-BA-xnN"/>
+                                    </constraints>
+                                    <state key="normal" image="btnSmartWatch"/>
+                                    <connections>
+                                        <action selector="btnSmartWatch_Action:" destination="-1" eventType="touchUpInside" id="zHY-Ax-HvZ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDR-fZ-etP">
+                                    <rect key="frame" x="247" y="0.0" width="67" height="67.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="DDR-fZ-etP" secondAttribute="height" multiplier="1:1" id="vao-uB-ivy"/>
+                                    </constraints>
+                                    <state key="normal" image="btnSmartWatch"/>
+                                    <connections>
+                                        <action selector="btnSmartWatch_Action:" destination="-1" eventType="touchUpInside" id="Brl-Az-EI2"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="DDR-fZ-etP" firstAttribute="width" secondItem="DDR-fZ-etP" secondAttribute="height" multiplier="1:1" id="aBp-dI-WtZ"/>
+                            </constraints>
+                        </stackView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="dMz-eS-gGd" secondAttribute="trailing" id="0dz-oh-KIZ"/>
                         <constraint firstItem="Uw7-v5-ZQg" firstAttribute="top" secondItem="dMz-eS-gGd" secondAttribute="bottom" constant="145" id="0g5-af-aZ4"/>
                         <constraint firstItem="Uw7-v5-ZQg" firstAttribute="centerX" secondItem="h6F-Ge-4MZ" secondAttribute="centerX" id="4Gz-KM-Afe"/>
+                        <constraint firstItem="R2e-aa-V4K" firstAttribute="leading" secondItem="h6F-Ge-4MZ" secondAttribute="leading" constant="50" id="8y5-gz-o2v"/>
                         <constraint firstItem="dMz-eS-gGd" firstAttribute="leading" secondItem="h6F-Ge-4MZ" secondAttribute="leading" id="Bo6-NO-2bv"/>
+                        <constraint firstAttribute="trailing" secondItem="R2e-aa-V4K" secondAttribute="trailing" constant="50" id="E60-j6-7lv"/>
                         <constraint firstItem="dMz-eS-gGd" firstAttribute="top" secondItem="h6F-Ge-4MZ" secondAttribute="top" id="h5E-yX-ofB"/>
+                        <constraint firstItem="R2e-aa-V4K" firstAttribute="top" secondItem="Uw7-v5-ZQg" secondAttribute="bottom" constant="50" id="qUE-Ct-UmZ"/>
                     </constraints>
                 </view>
             </subviews>

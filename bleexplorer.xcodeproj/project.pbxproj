@@ -183,7 +183,7 @@
 		84F9E004261D2CFD00D0F0EC /* bleexplorer */ = {
 			isa = PBXGroup;
 			children = (
-				AA5956AE26234F9600A38D3E /* Screen */,
+				AA1547B326287A5700253591 /* Module */,
 				AA5956A42623463F00A38D3E /* TableCell */,
 				AA136AC72622BAA300DCAB47 /* Extension */,
 				AA136A932622AFA200DCAB47 /* Custom */,
@@ -226,20 +226,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AA136A6F2622ABC200DCAB47 /* SelectBluetoothScreen */ = {
-			isa = PBXGroup;
-			children = (
-				AA136A702622AC3E00DCAB47 /* ViewSelectBluetooth.swift */,
-				AA136A712622AC3E00DCAB47 /* ViewSelectBluetooth.xib */,
-				AA136A7A2622AC5A00DCAB47 /* PresenterSelectBluetooth.swift */,
-				AA136A7F2622AC6C00DCAB47 /* InteractorSelectBluetooth.swift */,
-				AA136A842622AC8700DCAB47 /* RouterSelectBluetooth.swift */,
-				AA136A892622ACA800DCAB47 /* EntitySelectBluetooth.swift */,
-				AA136A8E2622ACD100DCAB47 /* BuilderSelectBluetooth.swift */,
-			);
-			path = SelectBluetoothScreen;
-			sourceTree = "<group>";
-		};
 		AA136A932622AFA200DCAB47 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +252,58 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		AA1547B326287A5700253591 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				AA1547B626287A9900253591 /* ChooseDevice */,
+				AA1547B526287A8100253591 /* SelectBluetooth */,
+				AA1547B426287A6600253591 /* LogWeight */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		AA1547B426287A6600253591 /* LogWeight */ = {
+			isa = PBXGroup;
+			children = (
+				AA5956AF26234FCD00A38D3E /* ViewLogWeight.swift */,
+				AA5956B026234FCD00A38D3E /* ViewLogWeight.xib */,
+				AA5956B926234FE100A38D3E /* PresenterLogWeight.swift */,
+				AA5956BE26234FF400A38D3E /* InteractorLogWeight.swift */,
+				AA5956C32623500300A38D3E /* RouterLogWeight.swift */,
+				AA5956C82623503700A38D3E /* EntityLogWeight.swift */,
+				AAE0C18F26249A0B00152EA4 /* BuilderLogWeight.swift */,
+			);
+			path = LogWeight;
+			sourceTree = "<group>";
+		};
+		AA1547B526287A8100253591 /* SelectBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				AA136A702622AC3E00DCAB47 /* ViewSelectBluetooth.swift */,
+				AA136A712622AC3E00DCAB47 /* ViewSelectBluetooth.xib */,
+				AA136A7A2622AC5A00DCAB47 /* PresenterSelectBluetooth.swift */,
+				AA136A7F2622AC6C00DCAB47 /* InteractorSelectBluetooth.swift */,
+				AA136A842622AC8700DCAB47 /* RouterSelectBluetooth.swift */,
+				AA136A892622ACA800DCAB47 /* EntitySelectBluetooth.swift */,
+				AA136A8E2622ACD100DCAB47 /* BuilderSelectBluetooth.swift */,
+			);
+			path = SelectBluetooth;
+			sourceTree = "<group>";
+		};
+		AA1547B626287A9900253591 /* ChooseDevice */ = {
+			isa = PBXGroup;
+			children = (
+				AA136A4C2621637200DCAB47 /* ViewChooseDevice.swift */,
+				AA136A4D2621637200DCAB47 /* ViewChooseDevice.xib */,
+				AA136A56262163F500DCAB47 /* PresenterChooseDevice.swift */,
+				AA136A5B2621640D00DCAB47 /* InteractorChooseDevice.swift */,
+				AA136A602621641B00DCAB47 /* RouterChooseDevice.swift */,
+				AA136A652621644200DCAB47 /* EntityChooseDevice.swift */,
+				AA136A6A2621650000DCAB47 /* BuilderChooseDeviceScreen.swift */,
+			);
+			path = ChooseDevice;
+			sourceTree = "<group>";
+		};
 		AA5956A42623463F00A38D3E /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,44 +319,6 @@
 				AA5956A72623468300A38D3E /* TableCellBluetooth.xib */,
 			);
 			path = TableCellBluetooth;
-			sourceTree = "<group>";
-		};
-		AA5956AD26234F7B00A38D3E /* LogWeightScreen */ = {
-			isa = PBXGroup;
-			children = (
-				AA5956AF26234FCD00A38D3E /* ViewLogWeight.swift */,
-				AA5956B026234FCD00A38D3E /* ViewLogWeight.xib */,
-				AA5956B926234FE100A38D3E /* PresenterLogWeight.swift */,
-				AA5956BE26234FF400A38D3E /* InteractorLogWeight.swift */,
-				AA5956C32623500300A38D3E /* RouterLogWeight.swift */,
-				AA5956C82623503700A38D3E /* EntityLogWeight.swift */,
-				AAE0C18F26249A0B00152EA4 /* BuilderLogWeight.swift */,
-			);
-			path = LogWeightScreen;
-			sourceTree = "<group>";
-		};
-		AA5956AE26234F9600A38D3E /* Screen */ = {
-			isa = PBXGroup;
-			children = (
-				AA136A6F2622ABC200DCAB47 /* SelectBluetoothScreen */,
-				AA7A62EB261DF9EE003B7655 /* ChooseDevicesScreen */,
-				AA5956AD26234F7B00A38D3E /* LogWeightScreen */,
-			);
-			path = Screen;
-			sourceTree = "<group>";
-		};
-		AA7A62EB261DF9EE003B7655 /* ChooseDevicesScreen */ = {
-			isa = PBXGroup;
-			children = (
-				AA136A4C2621637200DCAB47 /* ViewChooseDevice.swift */,
-				AA136A4D2621637200DCAB47 /* ViewChooseDevice.xib */,
-				AA136A56262163F500DCAB47 /* PresenterChooseDevice.swift */,
-				AA136A5B2621640D00DCAB47 /* InteractorChooseDevice.swift */,
-				AA136A602621641B00DCAB47 /* RouterChooseDevice.swift */,
-				AA136A652621644200DCAB47 /* EntityChooseDevice.swift */,
-				AA136A6A2621650000DCAB47 /* BuilderChooseDeviceScreen.swift */,
-			);
-			path = ChooseDevicesScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

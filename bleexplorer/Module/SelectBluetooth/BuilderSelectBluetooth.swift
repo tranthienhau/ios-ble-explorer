@@ -5,10 +5,12 @@
 //  Created by DatNguyen on 4/11/21.
 //
 
-import Foundation
+import UIKit
 
-class SelectBluetoothBuilder {
-    class func buildModule(arroundView view:ViewSelectBluetooth) {
+struct SelectBluetoothBuilder {
+    static func buildModule() -> UIViewController {
+        
+        let view = ViewSelectBluetooth(nibName: "ViewSelectBluetooth", bundle: nil)
         
         //MARK: Initialise components.
         let presenter = PresenterSelectBluetooth()
@@ -24,5 +26,7 @@ class SelectBluetoothBuilder {
         presenter.interactor = interactor
         // Setup Interactor
         interactor.presenter = presenter
+        
+        return view
     }
 }

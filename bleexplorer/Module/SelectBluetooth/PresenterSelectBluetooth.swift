@@ -9,7 +9,7 @@ import Foundation
 
 protocol PresenterSelectBluetoothProtocol: class {
     func getDataBluetooth()
-    func returnDataBluetooth(numberItem: Int)
+//    func returnDataBluetooth(numberItem: Int)
 }
 
 class PresenterSelectBluetooth : PresenterSelectBluetoothProtocol {
@@ -21,11 +21,18 @@ class PresenterSelectBluetooth : PresenterSelectBluetoothProtocol {
     //MARK: - Implement Protocol
     func getDataBluetooth() {
         guard let injectInteractor = interactor else {return}
-        injectInteractor.handleGetDataBluetooth()
+        injectInteractor.handleGetDataBluetooth(result: {value in
+            guard  let injectView = view else { return }
+            injectView.showDataListBluetooth(numberItem: value)
+        }, error: {isError in
+            if isError == true {
+                print("Error")
+            }
+        })
     }
     
-    func returnDataBluetooth(numberItem: Int) {
-        guard  let injectView = view else { return }
-        injectView.showDataListBluetooth(numberItem: numberItem)
-    }
+//    func returnDataBluetooth(numberItem: Int) {
+//        guard  let injectView = view else { return }
+//        injectView.showDataListBluetooth(numberItem: numberItem)
+//    }
 }
