@@ -14,7 +14,8 @@ struct SelectBluetoothBuilder {
         
         //MARK: Initialise components.
         let presenter = PresenterSelectBluetooth()
-        let interactor = InteractorSelectBluetooth()
+        let interactor = InteractorSelectBluetooth(injectNetworking: NetWorking())
+//        interactor.networking = NetWorking()
         let router = RouterSelectBluetooth()
         
         //MARK: link Viper components.

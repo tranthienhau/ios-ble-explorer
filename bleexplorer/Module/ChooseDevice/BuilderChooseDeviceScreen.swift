@@ -7,9 +7,9 @@
 
 import UIKit
 
-class ChooseDiviceBuilder {
+struct ChooseDiviceBuilder {
 
-    class func buildModule() -> UIViewController  {
+    static func buildModule() -> UIViewController  {
         
         let view = ViewChooseDevice(nibName: "ViewChooseDevice", bundle: nil)
         
@@ -17,6 +17,7 @@ class ChooseDiviceBuilder {
         let presenter = PresenterChooseDevice()
         let interactor = InteractorChooseDevice()
         let router = RouterChooseDevice()
+        router.viewController = view
         
         //MARK: link Viper components.
         // Setup View

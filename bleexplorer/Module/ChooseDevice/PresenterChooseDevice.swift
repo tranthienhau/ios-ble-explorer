@@ -22,11 +22,11 @@ class PresenterChooseDevice : PresenterChooseDeviceProtocol {
     //MARK: - Implement Protocol
     func touchButtonSmartScale() {
         guard let injectRouter = router else { return }
-        injectRouter.pushToDetail(from: view!)
+        injectRouter.pushToDetail()
     }
     
     func touchButtonSmartWatch() {
         guard let injectRouter = router else { return }
-        injectRouter.pushToDetail(from: view!)
+        injectRouter.pushToDetail()
     }
 }

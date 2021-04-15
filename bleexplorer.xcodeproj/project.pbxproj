@@ -35,6 +35,8 @@
 		AA136A962622AFDC00DCAB47 /* CustomViewTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA136A952622AFDC00DCAB47 /* CustomViewTitle.swift */; };
 		AA136A9E2622AFE800DCAB47 /* CustomViewTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA136A9D2622AFE800DCAB47 /* CustomViewTitle.xib */; };
 		AA136ACA2622BACF00DCAB47 /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA136AC92622BACE00DCAB47 /* ExtensionUIView.swift */; };
+		AA1547C5262883BF00253591 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1547C4262883BF00253591 /* Networking.swift */; };
+		AA1547CD262887C400253591 /* SelectBluetoothInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1547CC262887C400253591 /* SelectBluetoothInteractorTests.swift */; };
 		AA5956A82623468300A38D3E /* TableCellBluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5956A62623468300A38D3E /* TableCellBluetooth.swift */; };
 		AA5956A92623468300A38D3E /* TableCellBluetooth.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5956A72623468300A38D3E /* TableCellBluetooth.xib */; };
 		AA5956B126234FCD00A38D3E /* ViewLogWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5956AF26234FCD00A38D3E /* ViewLogWeight.swift */; };
@@ -102,6 +104,8 @@
 		AA136A952622AFDC00DCAB47 /* CustomViewTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewTitle.swift; sourceTree = "<group>"; };
 		AA136A9D2622AFE800DCAB47 /* CustomViewTitle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewTitle.xib; sourceTree = "<group>"; };
 		AA136AC92622BACE00DCAB47 /* ExtensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
+		AA1547C4262883BF00253591 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		AA1547CC262887C400253591 /* SelectBluetoothInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBluetoothInteractorTests.swift; sourceTree = "<group>"; };
 		AA5956A62623468300A38D3E /* TableCellBluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellBluetooth.swift; sourceTree = "<group>"; };
 		AA5956A72623468300A38D3E /* TableCellBluetooth.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCellBluetooth.xib; sourceTree = "<group>"; };
 		AA5956AF26234FCD00A38D3E /* ViewLogWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLogWeight.swift; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 		84F9E004261D2CFD00D0F0EC /* bleexplorer */ = {
 			isa = PBXGroup;
 			children = (
+				AA1547BA2628838500253591 /* Service */,
 				AA1547B326287A5700253591 /* Module */,
 				AA5956A42623463F00A38D3E /* TableCell */,
 				AA136AC72622BAA300DCAB47 /* Extension */,
@@ -203,6 +208,7 @@
 			children = (
 				84F9E01C261D2CFF00D0F0EC /* bleexplorerTests.swift */,
 				84F9E01E261D2CFF00D0F0EC /* Info.plist */,
+				AA1547CC262887C400253591 /* SelectBluetoothInteractorTests.swift */,
 			);
 			path = bleexplorerTests;
 			sourceTree = "<group>";
@@ -302,6 +308,22 @@
 				AA136A6A2621650000DCAB47 /* BuilderChooseDeviceScreen.swift */,
 			);
 			path = ChooseDevice;
+			sourceTree = "<group>";
+		};
+		AA1547BA2628838500253591 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AA1547BB2628838E00253591 /* CallAPI */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AA1547BB2628838E00253591 /* CallAPI */ = {
+			isa = PBXGroup;
+			children = (
+				AA1547C4262883BF00253591 /* Networking.swift */,
+			);
+			path = CallAPI;
 			sourceTree = "<group>";
 		};
 		AA5956A42623463F00A38D3E /* TableCell */ = {
@@ -531,6 +553,7 @@
 				AA5956BF26234FF400A38D3E /* InteractorLogWeight.swift in Sources */,
 				AA5956C42623500300A38D3E /* RouterLogWeight.swift in Sources */,
 				AA136A7B2622AC5A00DCAB47 /* PresenterSelectBluetooth.swift in Sources */,
+				AA1547C5262883BF00253591 /* Networking.swift in Sources */,
 				AA136A4E2621637200DCAB47 /* ViewChooseDevice.swift in Sources */,
 				AA136A662621644200DCAB47 /* EntityChooseDevice.swift in Sources */,
 				AA136A802622AC6C00DCAB47 /* InteractorSelectBluetooth.swift in Sources */,
@@ -561,6 +584,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F9E01D261D2CFF00D0F0EC /* bleexplorerTests.swift in Sources */,
+				AA1547CD262887C400253591 /* SelectBluetoothInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

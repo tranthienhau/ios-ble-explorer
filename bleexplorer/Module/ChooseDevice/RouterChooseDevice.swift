@@ -5,18 +5,20 @@
 //  Created by DatNguyen on 4/10/21.
 //
 
-import Foundation
+import UIKit
 
 protocol RouterChooseDeviceProtocol {
-    func pushToDetail(from view: ViewChooseDeviceProtocol)
+    func pushToDetail()
 }
 
 class RouterChooseDevice: RouterChooseDeviceProtocol {
-    func pushToDetail(from view: ViewChooseDeviceProtocol) {
-        let view = view as! ViewChooseDevice
+    
+    weak var viewController : UIViewController?
+    
+    func pushToDetail() {
         
         let viewSelectBlutooth = SelectBluetoothBuilder.buildModule()
-        view.navigationController?.pushViewController(viewSelectBlutooth, animated: true)
+        viewController?.navigationController?.pushViewController(viewSelectBlutooth, animated: true)
         
     }
 }

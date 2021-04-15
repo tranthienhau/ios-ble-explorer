@@ -21,13 +21,11 @@ class PresenterSelectBluetooth : PresenterSelectBluetoothProtocol {
     //MARK: - Implement Protocol
     func getDataBluetooth() {
         guard let injectInteractor = interactor else {return}
+        guard  let injectView = view else { return }
         injectInteractor.handleGetDataBluetooth(result: {value in
-            guard  let injectView = view else { return }
-            injectView.showDataListBluetooth(numberItem: value)
-        }, error: {isError in
-            if isError == true {
-                print("Error")
-            }
+                injectView.showDataListBluetooth(numberItem: value)
+        }, error: {msg in
+            
         })
     }
     
